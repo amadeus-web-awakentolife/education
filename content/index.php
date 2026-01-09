@@ -1,7 +1,9 @@
 <?php
 $homeVars = [
 	'cdn' => getHtmlVariable('cdn'),
-	'about-text' => replaceHtml('At %ATRE%, %Mission%') . getSnippet('our-aim'),
+	'mission-text' => replaceHtml('At %ATRE% we believe in a %Mission%'),
+	'about-text' => replaceHtml('Our vision it to %Vision%'),
+	'our-aim-text' => getSnippet('our-aim'),
 	'cta-w-100-link' => pageUrl('get-access'), //TODO: PWA
 	'cta-w-100' => 'To start using <span class="cursive btn btn-warning">add to Home Screen</span> and purchase a plan',
 	'last-media-embed' => processCanvaShortcode('[canva]DAG9slsHUuU[/canva]'),
@@ -14,6 +16,7 @@ $items = [];
 foreach ($sheet->rows as $item) {
 	$item = rowToObject($item, $sheet);
 	$item['link'] = pageUrl($item['link']);
+	$item['text'] = markdown($item['text']);
 	$items[] = replaceItems($itemTemplate, $item, '%');
 }
 

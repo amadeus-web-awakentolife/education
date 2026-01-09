@@ -1,0 +1,1 @@
+Provide assessment frameworks and resources to <span class="h5 cursive">educators and students</span> with channels for their voices to express themselves in their <span class="h5 cursive">teaching and learning efforts and outcomes</span>.
