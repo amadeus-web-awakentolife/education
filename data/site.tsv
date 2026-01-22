@@ -19,7 +19,8 @@ phone	+91-99446-13064
 whatsapp	919944613064
 email	vidya+education@awakentolife.org
 
-local-url	http://localhost/sites/for-vidya/education/
+local-url	http://localhost/education/
 live-url	https://education.awakentolife.org/
+showIn	organizations
 year	2025
 network	dawn-only

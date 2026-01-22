@@ -1,10 +1,5 @@
 <?php
 define('SITEPATH', __DIR__);
-include_once '../../../dawn/spring/entry.php';
-
-DEFINE('SUBSITES', [
-	'atl' => 'sites/for-vidya/awakentolife',
-	'atl-edu' => 'sites/for-vidya/education',
-]);
-
+include_once '../spring/entry.php';
+//DEFINE('SUBSITES', pathinfo(basename(__DIR__), PATHINFO_FILENAME));
 runFrameworkFile('site/begin');
